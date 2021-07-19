@@ -1,9 +1,28 @@
 .App {
+  background-color: #282c34;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+
+/* Fonts & Text */
+
+h1 {
+  font-family: monospace, serif;
+  font-size: 4rem;
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,8 +33,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +52,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Main Section */
+
+.Stats-display {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem 0 1rem;
+  border: none;
+  background-color: #61DBFB;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
 }

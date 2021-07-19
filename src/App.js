@@ -17,6 +17,7 @@ const SubTitle = ({text}) => {
         </div>
     );
 };
+
 const StatsDisplay = ({statValue, statPercentage, text}) => {
 
     if (statValue === 0) {
@@ -39,7 +40,6 @@ const Button = ({handleClick, text}) => {
     );
 };
 
-
 function App() {
 
     /* State */
@@ -49,7 +49,6 @@ function App() {
     const [totalCount, setTotalCount] = useState(0);
 
     /* Functions */
-
     const tallyButton = (value, setValue) => {
         return () => {
             setValue(value + 1);
@@ -58,7 +57,6 @@ function App() {
     };
 
     const calcAverage = () => Math.floor((goodCount + neutralCount + badCount) / 3);
-
 
     const calcPercentage = (stateCount = 0) => {
         return `${Math.floor((stateCount / totalCount) * 100)} %`;
